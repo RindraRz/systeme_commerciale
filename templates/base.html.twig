@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+            {{ encore_entry_link_tags('style') }}
+        {% endblock %}
+    </head>
+    
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+            <script src="{{ asset('css/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+			<script src="{{ asset('js/main.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>
